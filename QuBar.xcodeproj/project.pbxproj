@@ -1,0 +1,710 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B5811C791E539C490071FC84 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811C781E539C490071FC84 /* AppDelegate.swift */; };
+		B5811C7B1E539C490071FC84 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811C7A1E539C490071FC84 /* ViewController.swift */; };
+		B5811C7E1E539C490071FC84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5811C7C1E539C490071FC84 /* Main.storyboard */; };
+		B5811C801E539C490071FC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5811C7F1E539C490071FC84 /* Assets.xcassets */; };
+		B5811C831E539C490071FC84 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5811C811E539C490071FC84 /* LaunchScreen.storyboard */; };
+		B5811C8E1E539C490071FC84 /* QuBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811C8D1E539C490071FC84 /* QuBarTests.swift */; };
+		B5811C931E539C490071FC84 /* QuBar WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B5811C921E539C490071FC84 /* QuBar WatchKit App.app */; };
+		B5811C991E539C490071FC84 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5811C971E539C490071FC84 /* Interface.storyboard */; };
+		B5811C9B1E539C490071FC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5811C9A1E539C490071FC84 /* Assets.xcassets */; };
+		B5811CA21E539C490071FC84 /* QuBar WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B5811CA11E539C490071FC84 /* QuBar WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B5811CA91E539C490071FC84 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811CA81E539C490071FC84 /* InterfaceController.swift */; };
+		B5811CAB1E539C490071FC84 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811CAA1E539C490071FC84 /* ExtensionDelegate.swift */; };
+		B5811CAD1E539C490071FC84 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811CAC1E539C490071FC84 /* NotificationController.swift */; };
+		B5811CAF1E539C490071FC84 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5811CAE1E539C490071FC84 /* ComplicationController.swift */; };
+		B5811CB11E539C490071FC84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5811CB01E539C490071FC84 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B5811C8A1E539C490071FC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5811C6D1E539C490071FC84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5811C741E539C490071FC84;
+			remoteInfo = QuBar;
+		};
+		B5811C941E539C490071FC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5811C6D1E539C490071FC84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5811C911E539C490071FC84;
+			remoteInfo = "QuBar WatchKit App";
+		};
+		B5811CA31E539C490071FC84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5811C6D1E539C490071FC84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5811CA01E539C490071FC84;
+			remoteInfo = "QuBar WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B5811CB81E539C490071FC84 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B5811CA21E539C490071FC84 /* QuBar WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811CBC1E539C490071FC84 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B5811C931E539C490071FC84 /* QuBar WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B5811C751E539C490071FC84 /* QuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5811C781E539C490071FC84 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B5811C7A1E539C490071FC84 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B5811C7D1E539C490071FC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B5811C7F1E539C490071FC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5811C821E539C490071FC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B5811C841E539C490071FC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5811C891E539C490071FC84 /* QuBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5811C8D1E539C490071FC84 /* QuBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuBarTests.swift; sourceTree = "<group>"; };
+		B5811C8F1E539C490071FC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5811C921E539C490071FC84 /* QuBar WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuBar WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5811C981E539C490071FC84 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B5811C9A1E539C490071FC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5811C9C1E539C490071FC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5811CA11E539C490071FC84 /* QuBar WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuBar WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5811CA71E539C490071FC84 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B5811CA81E539C490071FC84 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B5811CAA1E539C490071FC84 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B5811CAC1E539C490071FC84 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B5811CAE1E539C490071FC84 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B5811CB01E539C490071FC84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B5811CB21E539C490071FC84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B5811C721E539C490071FC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C861E539C490071FC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C9E1E539C490071FC84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B5811C6C1E539C490071FC84 = {
+			isa = PBXGroup;
+			children = (
+				B5811C771E539C490071FC84 /* QuBar */,
+				B5811C8C1E539C490071FC84 /* QuBarTests */,
+				B5811C961E539C490071FC84 /* QuBar WatchKit App */,
+				B5811CA51E539C490071FC84 /* QuBar WatchKit Extension */,
+				B5811C761E539C490071FC84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B5811C761E539C490071FC84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B5811C751E539C490071FC84 /* QuBar.app */,
+				B5811C891E539C490071FC84 /* QuBarTests.xctest */,
+				B5811C921E539C490071FC84 /* QuBar WatchKit App.app */,
+				B5811CA11E539C490071FC84 /* QuBar WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B5811C771E539C490071FC84 /* QuBar */ = {
+			isa = PBXGroup;
+			children = (
+				B5811C781E539C490071FC84 /* AppDelegate.swift */,
+				B5811C7A1E539C490071FC84 /* ViewController.swift */,
+				B5811C7C1E539C490071FC84 /* Main.storyboard */,
+				B5811C7F1E539C490071FC84 /* Assets.xcassets */,
+				B5811C811E539C490071FC84 /* LaunchScreen.storyboard */,
+				B5811C841E539C490071FC84 /* Info.plist */,
+			);
+			path = QuBar;
+			sourceTree = "<group>";
+		};
+		B5811C8C1E539C490071FC84 /* QuBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				B5811C8D1E539C490071FC84 /* QuBarTests.swift */,
+				B5811C8F1E539C490071FC84 /* Info.plist */,
+			);
+			path = QuBarTests;
+			sourceTree = "<group>";
+		};
+		B5811C961E539C490071FC84 /* QuBar WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B5811C971E539C490071FC84 /* Interface.storyboard */,
+				B5811C9A1E539C490071FC84 /* Assets.xcassets */,
+				B5811C9C1E539C490071FC84 /* Info.plist */,
+			);
+			path = "QuBar WatchKit App";
+			sourceTree = "<group>";
+		};
+		B5811CA51E539C490071FC84 /* QuBar WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B5811CA81E539C490071FC84 /* InterfaceController.swift */,
+				B5811CAA1E539C490071FC84 /* ExtensionDelegate.swift */,
+				B5811CAC1E539C490071FC84 /* NotificationController.swift */,
+				B5811CAE1E539C490071FC84 /* ComplicationController.swift */,
+				B5811CB01E539C490071FC84 /* Assets.xcassets */,
+				B5811CB21E539C490071FC84 /* Info.plist */,
+				B5811CA61E539C490071FC84 /* Supporting Files */,
+			);
+			path = "QuBar WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B5811CA61E539C490071FC84 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B5811CA71E539C490071FC84 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B5811C741E539C490071FC84 /* QuBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5811CBD1E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBar" */;
+			buildPhases = (
+				B5811C711E539C490071FC84 /* Sources */,
+				B5811C721E539C490071FC84 /* Frameworks */,
+				B5811C731E539C490071FC84 /* Resources */,
+				B5811CBC1E539C490071FC84 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5811C951E539C490071FC84 /* PBXTargetDependency */,
+			);
+			name = QuBar;
+			productName = QuBar;
+			productReference = B5811C751E539C490071FC84 /* QuBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B5811C881E539C490071FC84 /* QuBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5811CC01E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBarTests" */;
+			buildPhases = (
+				B5811C851E539C490071FC84 /* Sources */,
+				B5811C861E539C490071FC84 /* Frameworks */,
+				B5811C871E539C490071FC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5811C8B1E539C490071FC84 /* PBXTargetDependency */,
+			);
+			name = QuBarTests;
+			productName = QuBarTests;
+			productReference = B5811C891E539C490071FC84 /* QuBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B5811C911E539C490071FC84 /* QuBar WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5811CB91E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBar WatchKit App" */;
+			buildPhases = (
+				B5811C901E539C490071FC84 /* Resources */,
+				B5811CB81E539C490071FC84 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5811CA41E539C490071FC84 /* PBXTargetDependency */,
+			);
+			name = "QuBar WatchKit App";
+			productName = "QuBar WatchKit App";
+			productReference = B5811C921E539C490071FC84 /* QuBar WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B5811CA01E539C490071FC84 /* QuBar WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5811CB51E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBar WatchKit Extension" */;
+			buildPhases = (
+				B5811C9D1E539C490071FC84 /* Sources */,
+				B5811C9E1E539C490071FC84 /* Frameworks */,
+				B5811C9F1E539C490071FC84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuBar WatchKit Extension";
+			productName = "QuBar WatchKit Extension";
+			productReference = B5811CA11E539C490071FC84 /* QuBar WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B5811C6D1E539C490071FC84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Andrii;
+				TargetAttributes = {
+					B5811C741E539C490071FC84 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZL58JZZ8KD;
+						ProvisioningStyle = Automatic;
+					};
+					B5811C881E539C490071FC84 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZL58JZZ8KD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B5811C741E539C490071FC84;
+					};
+					B5811C911E539C490071FC84 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZL58JZZ8KD;
+						ProvisioningStyle = Automatic;
+					};
+					B5811CA01E539C490071FC84 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = ZL58JZZ8KD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B5811C701E539C490071FC84 /* Build configuration list for PBXProject "QuBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B5811C6C1E539C490071FC84;
+			productRefGroup = B5811C761E539C490071FC84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B5811C741E539C490071FC84 /* QuBar */,
+				B5811C881E539C490071FC84 /* QuBarTests */,
+				B5811C911E539C490071FC84 /* QuBar WatchKit App */,
+				B5811CA01E539C490071FC84 /* QuBar WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B5811C731E539C490071FC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5811C831E539C490071FC84 /* LaunchScreen.storyboard in Resources */,
+				B5811C801E539C490071FC84 /* Assets.xcassets in Resources */,
+				B5811C7E1E539C490071FC84 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C871E539C490071FC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C901E539C490071FC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5811C9B1E539C490071FC84 /* Assets.xcassets in Resources */,
+				B5811C991E539C490071FC84 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C9F1E539C490071FC84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5811CB11E539C490071FC84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5811C711E539C490071FC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5811C7B1E539C490071FC84 /* ViewController.swift in Sources */,
+				B5811C791E539C490071FC84 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C851E539C490071FC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5811C8E1E539C490071FC84 /* QuBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5811C9D1E539C490071FC84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5811CAD1E539C490071FC84 /* NotificationController.swift in Sources */,
+				B5811CAF1E539C490071FC84 /* ComplicationController.swift in Sources */,
+				B5811CAB1E539C490071FC84 /* ExtensionDelegate.swift in Sources */,
+				B5811CA91E539C490071FC84 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B5811C8B1E539C490071FC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5811C741E539C490071FC84 /* QuBar */;
+			targetProxy = B5811C8A1E539C490071FC84 /* PBXContainerItemProxy */;
+		};
+		B5811C951E539C490071FC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5811C911E539C490071FC84 /* QuBar WatchKit App */;
+			targetProxy = B5811C941E539C490071FC84 /* PBXContainerItemProxy */;
+		};
+		B5811CA41E539C490071FC84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5811CA01E539C490071FC84 /* QuBar WatchKit Extension */;
+			targetProxy = B5811CA31E539C490071FC84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B5811C7C1E539C490071FC84 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5811C7D1E539C490071FC84 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B5811C811E539C490071FC84 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5811C821E539C490071FC84 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B5811C971E539C490071FC84 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B5811C981E539C490071FC84 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B5811CB31E539C490071FC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5811CB41E539C490071FC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5811CB61E539C490071FC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				INFOPLIST_FILE = "QuBar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		B5811CB71E539C490071FC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				INFOPLIST_FILE = "QuBar WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBar.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		B5811CBA1E539C490071FC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				IBSC_MODULE = QuBar_WatchKit_Extension;
+				INFOPLIST_FILE = "QuBar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		B5811CBB1E539C490071FC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				IBSC_MODULE = QuBar_WatchKit_Extension;
+				INFOPLIST_FILE = "QuBar WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBar.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		B5811CBE1E539C490071FC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				INFOPLIST_FILE = QuBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B5811CBF1E539C490071FC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				INFOPLIST_FILE = QuBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B5811CC11E539C490071FC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				INFOPLIST_FILE = QuBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuBar.app/QuBar";
+			};
+			name = Debug;
+		};
+		B5811CC21E539C490071FC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = ZL58JZZ8KD;
+				INFOPLIST_FILE = QuBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = igy.com.QuBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuBar.app/QuBar";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B5811C701E539C490071FC84 /* Build configuration list for PBXProject "QuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5811CB31E539C490071FC84 /* Debug */,
+				B5811CB41E539C490071FC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5811CB51E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBar WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5811CB61E539C490071FC84 /* Debug */,
+				B5811CB71E539C490071FC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5811CB91E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBar WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5811CBA1E539C490071FC84 /* Debug */,
+				B5811CBB1E539C490071FC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5811CBD1E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5811CBE1E539C490071FC84 /* Debug */,
+				B5811CBF1E539C490071FC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B5811CC01E539C490071FC84 /* Build configuration list for PBXNativeTarget "QuBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5811CC11E539C490071FC84 /* Debug */,
+				B5811CC21E539C490071FC84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B5811C6D1E539C490071FC84 /* Project object */;
+}
