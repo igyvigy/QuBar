@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainVc" customModule="QuBar" customModuleProvider="target"/>
+        <viewController id="LnG-A6-0vX" customClass="MainVc" customModule="QuBar" customModuleProvider="target">
+            <layoutGuides>
+                <viewControllerLayoutGuide type="top" id="WeH-LP-OZF"/>
+                <viewControllerLayoutGuide type="bottom" id="88N-qg-hkm"/>
+            </layoutGuides>
+            <view key="view" contentMode="scaleToFill" id="c4y-r4-5PD">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOf-sn-zuU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Iz-O8-iFP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFE-Kx-UFB">
+                                        <rect key="frame" x="69" y="638" width="239" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="mgn-1U-obP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="cFE-Kx-UFB" firstAttribute="leading" secondItem="0Iz-O8-iFP" secondAttribute="leading" constant="69" id="3no-ve-AEc"/>
+                                    <constraint firstAttribute="bottom" secondItem="cFE-Kx-UFB" secondAttribute="bottom" constant="8" id="HP0-kR-7UO"/>
+                                    <constraint firstAttribute="trailing" secondItem="cFE-Kx-UFB" secondAttribute="trailing" constant="67" id="Rbr-KT-M9o"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="27B-8t-EeN" appends="YES" id="sGj-Wt-Z0h"/>
+                                </connections>
+                            </view>
+                            <sceneKitView clipsSubviews="YES" contentMode="scaleToFill" sceneName="level.scn" autoenablesDefaultLighting="YES" preferredRenderingAPI="1" translatesAutoresizingMaskIntoConstraints="NO" id="bUq-LP-GjP" customClass="QuBar" customModule="QuBar" customModuleProvider="target">
+                                <rect key="frame" x="67" y="393" width="240" height="240"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="BoW-B7-bQB"/>
+                                    <constraint firstAttribute="width" secondItem="bUq-LP-GjP" secondAttribute="height" multiplier="1:1" id="pNt-pC-ynY"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="3aE-Ns-Tru" appends="YES" id="FZh-la-E8C"/>
+                                </connections>
+                            </sceneKitView>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVy-o9-b75">
+                                <rect key="frame" x="8" y="632" width="51" height="31"/>
+                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didSwitch:" destination="LnG-A6-0vX" eventType="valueChanged" id="ZBt-5N-uQc"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mzb-yl-0Tx">
+                                <rect key="frame" x="318" y="632" width="51" height="31"/>
+                                <color key="onTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="didSwitch2:" destination="LnG-A6-0vX" eventType="valueChanged" id="ZGN-Nm-lxM"/>
+                                </connections>
+                            </switch>
+                        </subviews>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="bUq-LP-GjP" firstAttribute="centerX" secondItem="BOf-sn-zuU" secondAttribute="centerX" id="1NK-tY-5ZK"/>
+                            <constraint firstItem="0Iz-O8-iFP" firstAttribute="top" secondItem="BOf-sn-zuU" secondAttribute="top" id="5uI-C2-7ay"/>
+                            <constraint firstAttribute="bottom" secondItem="0Iz-O8-iFP" secondAttribute="bottom" id="CFF-9B-1Le"/>
+                            <constraint firstAttribute="trailing" secondItem="0Iz-O8-iFP" secondAttribute="trailing" id="TQR-I9-p10"/>
+                            <constraint firstAttribute="trailing" secondItem="mzb-yl-0Tx" secondAttribute="trailing" constant="8" id="a8h-Lu-gf6"/>
+                            <constraint firstAttribute="bottom" secondItem="mzb-yl-0Tx" secondAttribute="bottom" constant="4" id="czb-lg-P48"/>
+                            <constraint firstAttribute="bottom" secondItem="EVy-o9-b75" secondAttribute="bottom" constant="4" id="g6m-Lc-LmK"/>
+                            <constraint firstItem="0Iz-O8-iFP" firstAttribute="leading" secondItem="BOf-sn-zuU" secondAttribute="leading" id="iZL-YG-2Bc"/>
+                            <constraint firstAttribute="bottom" secondItem="bUq-LP-GjP" secondAttribute="bottom" constant="34" id="lcO-Ks-PL7"/>
+                            <constraint firstItem="EVy-o9-b75" firstAttribute="leading" secondItem="BOf-sn-zuU" secondAttribute="leading" constant="8" id="wkC-gO-H6z"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="BOf-sn-zuU" secondAttribute="trailing" id="DAY-mM-pAu"/>
+                    <constraint firstItem="BOf-sn-zuU" firstAttribute="top" secondItem="c4y-r4-5PD" secondAttribute="top" id="XsP-jz-9O1"/>
+                    <constraint firstItem="BOf-sn-zuU" firstAttribute="leading" secondItem="c4y-r4-5PD" secondAttribute="leading" id="k0v-Ar-IqD"/>
+                    <constraint firstItem="88N-qg-hkm" firstAttribute="top" secondItem="BOf-sn-zuU" secondAttribute="bottom" id="xaB-vt-Elc"/>
+                </constraints>
+            </view>
+            <connections>
+                <outlet property="bottomConstraint" destination="lcO-Ks-PL7" id="Tct-Xj-OK2"/>
+                <outlet property="contentView" destination="0Iz-O8-iFP" id="9kz-vt-NqQ"/>
+                <outlet property="heightConstraint" destination="BoW-B7-bQB" id="vrX-V7-0nt"/>
+                <outlet property="infoLabel" destination="cFE-Kx-UFB" id="CSm-eb-pYi"/>
+                <outlet property="quBar" destination="bUq-LP-GjP" id="BF2-r1-TBa"/>
+                <outlet property="switcher" destination="EVy-o9-b75" id="wyF-ET-EFb"/>
+                <outlet property="switcher2" destination="mzb-yl-0Tx" id="OLd-TP-b0Y"/>
+            </connections>
+            <point key="canvasLocation" x="-266.5" y="806.5"/>
+        </viewController>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tapGestureRecognizer id="27B-8t-EeN">
+            <connections>
+                <action selector="outterTapperDidTap:" destination="LnG-A6-0vX" id="Yu5-YE-5Ap"/>
+            </connections>
+        </tapGestureRecognizer>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="3aE-Ns-Tru">
+            <connections>
+                <action selector="pannerDidPan:" destination="LnG-A6-0vX" id="JGR-6B-wPn"/>
+            </connections>
+        </panGestureRecognizer>
+    </objects>
+</document>
